@@ -10,7 +10,7 @@ that re-deploying the environment can be done while customer watches.
 ## Prerequisites
 
 _A working Kubernetes_: This can be a local cluster as provided by Docker
-Desktop, k8d, or otherwise.  It could also be managed Kubernetes such as EKS,
+Desktop, k3d, kind, or otherwise.  It could also be managed Kubernetes such as EKS,
 AKS, or DOKS.  Please specify which in your submission below:
 
 Kubernetes "flavor" used in submission: `<Your K8s Flavor Goes Here>`
@@ -30,7 +30,7 @@ compressed artifact of the repository (see [Deliverables](#deliverables) below).
 You will build and deploy the small Golang API as implemented in `app/` to your
 Kubernetes cluster.
 
-The if the containerized application requires an external registry to
+If the containerized application requires an external registry to
 (temporarily) host the image use [`ttl.sh`](https://ttl.sh) with no more than a
 2h TTL.
 
